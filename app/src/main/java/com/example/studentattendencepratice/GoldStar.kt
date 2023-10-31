@@ -121,7 +121,7 @@ fun StudentGoldStars(studentNames: StudentNames) {
 
 @Composable
 fun StarAwards(studentNames: StudentNames) {
-    if(studentNames.count >= 3){
+    if(studentNames.count >= 15){
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -151,7 +151,7 @@ fun StarAwards(studentNames: StudentNames) {
             )
         }
     }
-    else if(studentNames.count > 0) {
+    else if(studentNames.count > 7) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
