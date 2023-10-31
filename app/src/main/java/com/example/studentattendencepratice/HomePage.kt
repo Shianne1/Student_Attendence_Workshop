@@ -50,8 +50,11 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.studentattendencepratice.ui.theme.Amaranth
 import com.example.studentattendencepratice.ui.theme.Bittersweet
+import com.example.studentattendencepratice.ui.theme.Burnt_sienna
+import com.example.studentattendencepratice.ui.theme.Charcoal
 import com.example.studentattendencepratice.ui.theme.Claret
 import com.example.studentattendencepratice.ui.theme.Coral
+import com.example.studentattendencepratice.ui.theme.Saffron
 
 /*
 
@@ -138,8 +141,8 @@ fun StudentList (list: ArrayList<StudentNames>,sort: ArrayList<SortingNames>, pa
 fun LetterCard(sortingNames: SortingNames) {
     Card(modifier = Modifier
         .fillMaxWidth()
-        .border(3.dp, color = Claret, shape = RectangleShape),
-        colors = CardDefaults.cardColors(containerColor = Amaranth),
+        .border(3.dp, color = Charcoal, shape = RectangleShape),
+        colors = CardDefaults.cardColors(containerColor = Burnt_sienna),
         elevation = CardDefaults.cardElevation(8.dp),
         shape = RectangleShape
     )
@@ -161,10 +164,10 @@ fun LetterCard(sortingNames: SortingNames) {
 fun StudentCard(studentNames: StudentNames) { // Stateless counter
     Card(modifier = Modifier
         .padding(15.dp)
-        .border(3.dp, color = Claret, shape = RectangleShape)
+        .border(3.dp, color = Charcoal, shape = RectangleShape)
         .fillMaxWidth(),
         elevation = CardDefaults.cardElevation(8.dp),
-        colors = CardDefaults.cardColors(containerColor = Coral),
+        colors = CardDefaults.cardColors(containerColor = Saffron),
         shape = RectangleShape
     )
     {
