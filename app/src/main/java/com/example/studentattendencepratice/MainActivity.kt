@@ -37,6 +37,8 @@ import androidx.navigation.compose.rememberNavController
 import com.example.studentattendencepratice.ui.theme.Amaranth
 import com.example.studentattendencepratice.ui.theme.Bittersweet
 import com.example.studentattendencepratice.ui.theme.Claret
+import com.example.studentattendencepratice.ui.theme.Persian_green
+import com.example.studentattendencepratice.ui.theme.Sandy_brown
 import com.example.studentattendencepratice.ui.theme.StudentAttendencePraticeTheme
 
 class MainActivity : ComponentActivity() {
@@ -83,7 +85,7 @@ fun HeaderAndFooter(list: ArrayList<StudentNames>, letterList: ArrayList<Sorting
                 modifier = Modifier
                     .height(120.dp),
                 colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
-                    containerColor = Claret,
+                    containerColor = Persian_green,
                 ),
                 title = {
                     Row(
@@ -104,7 +106,7 @@ fun HeaderAndFooter(list: ArrayList<StudentNames>, letterList: ArrayList<Sorting
         },
         bottomBar = {
             BottomAppBar(
-                containerColor = Claret,
+                containerColor = Persian_green,
                 contentColor = MaterialTheme.colorScheme.primary,
                 modifier = Modifier
                     .height(90.dp),
@@ -118,7 +120,7 @@ fun HeaderAndFooter(list: ArrayList<StudentNames>, letterList: ArrayList<Sorting
 
                     Button(onClick = { navController.navigate("gold_star") },
                         shape =  RoundedCornerShape(10.dp),
-                        colors = ButtonDefaults.buttonColors(Bittersweet),
+                        colors = ButtonDefaults.buttonColors(Sandy_brown),
                         modifier = Modifier
                             .padding(12.dp)
                     ) {

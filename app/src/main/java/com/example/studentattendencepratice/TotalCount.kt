@@ -33,6 +33,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.studentattendencepratice.ui.theme.Bittersweet
+import com.example.studentattendencepratice.ui.theme.Sandy_brown
 import kotlin.random.Random
 /*
 @Composable
@@ -156,7 +157,7 @@ fun TotalDialog(studentList: ArrayList<StudentNames>) {
     Column {
         Button(onClick = { showDialog = true },
             shape =  RoundedCornerShape(10.dp),
-            colors = ButtonDefaults.buttonColors(Bittersweet),
+            colors = ButtonDefaults.buttonColors(Sandy_brown),
             modifier = Modifier
                 .padding(12.dp)
             ) {
