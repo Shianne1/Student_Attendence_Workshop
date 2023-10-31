@@ -45,6 +45,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             val list2 = FileReader.readFile(this, "Attendace")
             val list3 = FileParser.PopulateLetter(list2)
+            val list4 = FileParser.PopulateLetter(list2)
             StudentAttendencePraticeTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
@@ -52,6 +53,7 @@ class MainActivity : ComponentActivity() {
                 ) {
                     //ImageHeader()
                     HomeScreen(list = list2, letterList = list3)
+
                 }
             }
         }
