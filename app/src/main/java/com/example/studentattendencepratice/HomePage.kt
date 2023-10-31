@@ -101,7 +101,7 @@ fun ImageHeader() {
                     .fillMaxWidth()
             ) {
                 Image(
-                    painter = painterResource(id = R.drawable.banner3),
+                    painter = painterResource(id = R.drawable.banner1),
                     contentDescription = null,
                     contentScale = ContentScale.FillWidth,
                     modifier = Modifier
